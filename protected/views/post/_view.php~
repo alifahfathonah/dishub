@@ -1,0 +1,26 @@
+<div class="post">
+	<h2 class="art-postheader">
+		<?php echo CHtml::link(CHtml::encode($data->title), $data->url); ?>
+	</h2>
+	<div class="art-postmetadataheader">
+		posted by <?php echo $data->userid . ' on ' . date('d-m-Y',$data->create_time); ?>
+	</div>
+	<div class="art-postcontent">
+	<table class="art-article" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody>
+	<tr><?php if(!empty($data->image)){?><td width="1px"><p><img border="0" src="<?php echo Yii::app()->baseUrl.'/images/image/artikel/'.$data->image;?>" style="float: left;  border:2px solid black;" width="200px"></p></td><?php }?>
+    <td><?php
+			$this->beginWidget('CMarkdown', array('purifyOutput'=>true));
+			echo substr(strip_tags($data->content),0,500).' ...';
+			$this->endWidget();
+		?></td></tr></tbody></table>
+	</div>
+	<div class="nav">
+		<b>Tags:</b>
+		<?php echo implode(', ', $data->tagLinks); ?>
+		<br/>
+		<?php echo CHtml::link('Permalink', $data->url); ?> |
+		<?php echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?> |
+		Last updated on <?php echo date('d-m-Y',$data->update_time); ?>
+	</div><br>
+	<div class="cleared"><hr></div>
+</div>

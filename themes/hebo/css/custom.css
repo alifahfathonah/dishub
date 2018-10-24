@@ -1,0 +1,237 @@
+/* 
+    Document   : custom
+    Created on : Nov 21, 2013, 12:18:12 PM
+    Author     : developer
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-image: none !important;
+}
+/*-- on hover menu */
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+/* if you want to hide the arrow */
+a.menu:after, .dropdown-toggle:after {
+  content: none;
+}
+/*end hover menu */
+footer{
+    background-color: #1D7CCC;
+    color: #fff;
+    text-align: center;
+}
+.footer{
+    padding: 10px 10px !important;
+}
+#bottom{
+    background: none !important;
+    margin-top: 10px;
+}
+#bottom>.container.bottom{
+    background: #E7E7E7 !important;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+#header{
+    background-color: #1D7CCC;
+    color: #fff;
+}
+#navigation-main .navbar .navbar-inner{
+    background-color: #e7e7e7;
+    color: #000;
+}
+h3.title, h3.title a{
+    line-height: 24px !important;
+    text-decoration: none !important;
+}
+.nivo-caption{
+    background: #1D7CCC;
+    opacity: 0.8;
+    margin: 20px;
+    width: 50%;
+}
+.nivoSlider .title, .nivoSlider .title a{
+    color: #FBB718;
+    text-decoration: none;
+    border-bottom: none;
+}
+.navbar .nav >.active a:hover{
+    background: none !important;
+    text-shadow: none;
+    color: #1D7CCC;
+}
+.navbar .nav >li >a{
+    color: #000;
+    text-shadow: none;
+}
+
+.navbar-inner{
+    min-height: 10px;
+}
+.nav li a label{
+    margin-bottom: 0px;
+}
+.navbar .nav >.active a{
+    background: none;
+    text-shadow: none;
+    color: #1D7CCC;
+}
+#bottom .bottom hr{
+    margin: 0 !important;
+    border: solid 1px #A7A7A7 !important;
+}
+.bottom ul.list-blog-roll li a:before{
+    content: "\00BB \0020";
+}
+.bottom ul.list-blog-roll li{
+    padding: 0 !important;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul.izin> li a:before{
+    content: "\00BB \0020";
+}
+.sidebar ul.izin{
+    margin: 0 !important;
+}
+ul.izin li{
+    padding: 10px;
+    border-bottom: solid 1px #E7E7E7;
+}
+ul.izin li:last-child{
+    border-bottom: none !important;
+}
+ul.izin li a{
+    display: block;
+}
+ul.izin li:hover{
+    background: #E7E7E7;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar h3{
+    color: #000 !important;
+}
+.sidebar ul.list-blog-roll li a:before{
+    content: "\00BB \0020" !important;
+}
+.sidebar ul.list-blog-roll{
+    margin: 0px;
+    padding-left: 5px;
+}
+.bottom .list-blog-roll li{
+    line-height: 20px;
+}
+.list-blog-roll li a{
+    line-height: 30px;
+}
+.metadate{
+    background: #1D7CCC;
+    color: #fff;
+    height: 100%;
+}
+.metadate .date{
+    font-size: 40px;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
+    padding: 10px 2px 10px 2px;
+}
+.metadate .month{
+    font-size: 16px;
+    padding: 5px 2px 5px 2px;
+}
+.post h3{
+    line-height: 25px;
+    margin: 0;
+    font-size: 24px;
+}
+.separator{
+    margin: 3px 0 3px 0;
+    padding: 3px 0 3px 0;
+}
+@media (max-width: 480px) {
+    .nivo-caption{
+        width: 100% !important;
+        margin: 0 auto !important;
+        
+    }
+    .nivo-caption .title{
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+    .nivo-caption{
+    background: #1D7CCC;
+    opacity: 0.8;
+    margin: 0px !important;
+    width: 30%;
+}
+}
+.logo{
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+    background-image:url(../img/logo1.jpg) !important;
+    width: 100% !important;
+    height: 80px;
+}
+.grid-view .filters input[type="text"]{
+    padding: 0 !important;
+}
+.grid-view table.items th{
+    background: #1D7CCC !important;
+}
+#pencarian{
+    background: #FBB718;
+    display: block;
+    text-align: center;
+}
+.navbar .navbar-inner .container{
+    padding: 0 !important;
+}
+#pencarian .dropdown-menu{
+    background: #F3D07F;
+}
+#pencarian ul.nav li a{
+    display: block;
+}
+#pencarian ul.nav li{
+    width: 100%;
+}
+.btn-pencarian{
+    background: #FBB718;
+}
+#bottom .bottom ul li, .bottom ul li{
+    list-style-type: circle !important;
+    padding: 3px;
+}
+.list-banner{
+    width: 960px;
+}
+.list-banner ul{
+    display: block;
+    list-style: none;
+    padding:0px;
+}
+.list-banner li{
+    text-align: center;
+    width: 220px;
+    
+    padding: 3px;
+    margin: 5px;
+    float: left;
+    display: block;
+    border: 1px solid #ccc;
+}
+.caroufredsel_wrapper{
+    margin:0px !important;
+}
