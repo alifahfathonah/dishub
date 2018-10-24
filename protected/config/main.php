@@ -24,7 +24,7 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'lasamba',
+			'password'=>'asdf',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('*','::1'),
 		),
@@ -64,7 +64,7 @@ return array(
 			'connectionString' => 'mysql:host=mysql.idhostinger.com;dbname=u138406542_dllaj',
 			'emulatePrepare' => true,
 			'username' => 'u138406542_dllaj',
-			'password' => 'lasido678',
+			'password' => 'your_password',
 			'charset' => 'utf8', 
 		),
 		
